@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        h1::before {
+            content: 'Hello ';
+            color: chartreuse;
+        }
+
+        h1::after {
+            content: ' Gelo';
+            color: limegreen;
+        }
+
+        blockquote::before {
+            content: open-quote;
+            color: maroon;
+            font-size: 2em;
+        }
+
+        blockquote::after {
+            content: close-quote;
+            color: maroon;
+            font-size: 2em;
+        }
+
+        .section-tittle {
+            display: inline-block;
+        }
+
+        .section-tittle::after,
+        .section-tittle::before {
+            content: '';
+            display: block;
+            background-color: maroon;
+            height: 2px;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Pseudo element try kortesi ar dekthesi.</h1>
+    <section>
+        <h2 class="section-tittle">Best Quotes</h2>
+        <blockquote>
+            Your time is limited, so don't waste it living someone else's life.
+        </blockquote>
+        <blockquote>A life spent making mistakes is not only more honorable, but more useful than a life spent doing
+            nothing</blockquote>
+        <blockquote>The greatest glory in living lies not in never falling, but in rising every time we fall
+        </blockquote>
+        <blockquote>If you look at what you have in life, you'll always have more. If you look at what you don't have in
+            life, you'll never have enough. </blockquote>
+        <blockquote>If you set your goals ridiculously high and it's a failure, you will fail above everyone else's
+            success. </blockquote>
+    </section>
+
+</body>
+
+</html>
